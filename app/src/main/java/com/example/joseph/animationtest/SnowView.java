@@ -28,7 +28,7 @@ public class SnowView extends View {
     public SnowView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
-
+ 
     protected void resize(int width, int height) {
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setColor(Color.WHITE);

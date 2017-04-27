@@ -19,15 +19,15 @@ class SnowFlake {
     private static final float ANGLE_SEED = 25f;
     private static final float ANGLE_DIVISOR = 10000f;
     private static final float INCREMENT_LOWER = 4f;
-    private static final float INCREMENT_UPPER = 6f;
+    private static final float INCREMENT_UPPER = 8f;
     private static final float FLAKE_SIZE_LOWER = 4f;
-    private static final float FLAKE_SIZE_UPPER = 8f;
+    private static final float FLAKE_SIZE_UPPER = 6f;
 
     private final Random random;
     private final Point position;
     private float angle;
     private final float increment;
-    private final float flakeSize;
+    private  final float flakeSize;
     private final Paint paint;
 
     public static SnowFlake create(int width, int height, Paint paint) {
@@ -41,7 +41,7 @@ class SnowFlake {
         return new SnowFlake(random, position, angle, increment, flakeSize, paint);
     }
 
-    SnowFlake(Random random, Point position, float angle, float increment, float flakeSize, Paint paint) {
+    private SnowFlake(Random random, Point position, float angle, float increment, float flakeSize, Paint paint) {
         this.random = random;
         this.position = position;
         this.angle = angle;

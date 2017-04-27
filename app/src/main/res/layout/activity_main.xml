@@ -10,23 +10,22 @@
     <ImageView
         android:id="@+id/imageView2"
 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:contentDescription="@null"
-        android:scaleType="fitCenter"
+        android:scaleType="fitXY"
         app:srcCompat="@drawable/tree"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
     <com.example.joseph.animationtest.SnowView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView2"
         android:layout_alignEnd="@+id/imageView2"
-        android:layout_alignLeft="@+id/imageView2"
-        android:layout_alignRight="@+id/imageView2"
-        android:layout_alignStart="@+id/imageView2"
-        android:layout_alignTop="@+id/imageView2" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView2" />
 
 </RelativeLayout>
 
